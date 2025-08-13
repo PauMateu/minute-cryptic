@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-scale=1.0">
+    <title>Minut Cryptic - Puzzle 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <button class="back-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="date-info">
+                <div class="date">27 June, 2025</div>
+                <div class="author">By William Snow</div>
+            </div>
+            <div class="header-icons">
+                <button class="info-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="menu-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="6" width="18" height="2" fill="currentColor"/>
+                        <rect x="3" y="11" width="18" height="2" fill="currentColor"/>
+                        <rect x="3" y="16" width="18" height="2" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Clue -->
+        <div class="clue-container">
+            <div class="clue-text">S’ha mudat sortint al carrer seguint quatre principis estetics, en Romeu Trinxat. (10)</div>
+        </div>
+
+        <!-- Game Area -->
+        <div class="game-area">
+            <!-- Grid -->
+            <div class="grid-container">
+                <div class="grid">
+                    <!-- Grid cells will be generated dynamically -->
+                </div>
+            </div>
+
+            <!-- Progress Dots -->
+            <div class="progress-container">
+                <div class="progress-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="progress-text">par</div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="check-btn">Comprova</button>
+        </div>
+
+        <!-- Virtual Keyboard -->
+        <div class="keyboard">
+            <div class="keyboard-row">
+                <button class="key">Q</button>
+                <button class="key">W</button>
+                <button class="key">E</button>
+                <button class="key">R</button>
+                <button class="key">T</button>
+                <button class="key">Y</button>
+                <button class="key">U</button>
+                <button class="key">I</button>
+                <button class="key">O</button>
+                <button class="key">P</button>
+            </div>
+            <div class="keyboard-row">
+                <button class="key">A</button>
+                <button class="key">S</button>
+                <button class="key">D</button>
+                <button class="key">F</button>
+                <button class="key">G</button>
+                <button class="key">H</button>
+                <button class="key">J</button>
+                <button class="key">K</button>
+                <button class="key">L</button>
+            </div>
+            <div class="keyboard-row">
+                <button class="key">Z</button>
+                <button class="key">X</button>
+                <button class="key">C</button>
+                <button class="key">V</button>
+                <button class="key">B</button>
+                <button class="key">N</button>
+                <button class="key">M</button>
+                <button class="key backspace">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 4H8L1 12L8 20H21C21.5523 20 22 19.5523 22 19V5C22 4.44772 21.5523 4 21 4Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M18 9L12 15M12 9L18 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Puzzle configuration for ESTER MOREU
+        window.puzzleConfig = {
+            solution: 'ESTERMOREU',
+            clue: 'S’ha mudat sortint al carrer seguint quatre principis estetics, en Romeu Trinxat.',
+            hints: [
+                'Think about anagrams and hidden words...',
+                'Easter is a festival, what names are associated?',
+                'Look for letters hidden within "monastery"',
+                'An Easter name that could be found in "monasESTER MOREau"'
+            ],
+            author: 'El Pistero',
+            date: '27 June, 2025',
+            wordBreaks: [5], // Space after 5th letter (ESTER MOREU)
+            videoUrl: 'https://www.youtube.com/watch?v=IudjuR77Kx8' // Placeholder for video URL
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minut Cryptic - Puzzle Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .puzzle-menu {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .puzzle-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .puzzle-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 24px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .puzzle-card:hover {
+            transform: translateY(-2px);
+        }
+        .puzzle-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .puzzle-author {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+        .puzzle-preview {
+            font-size: 14px;
+            color: #888;
+            font-style: italic;
+        }
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="puzzle-menu">
+            <h1 class="main-title">Minut Cryptic</h1>
+            
+            <div class="puzzle-list">
+                <a href="puzzle1.html" class="puzzle-card">
+                    <div class="puzzle-title">Primer puzzle</div>
+                    <div class="puzzle-author">By Pistero 24</div>
+                    <div class="puzzle-preview">De vestir-se...</div>
+                </a>
+                
+                <a href="puzzle2.html" class="puzzle-card">
+                    <div class="puzzle-title">Segon Puzzle</div>
+                    <div class="puzzle-author">By Pistero 24</div>
+                    <div class="puzzle-preview">D'automedicar-se...</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
